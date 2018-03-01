@@ -2,14 +2,15 @@
 <html>
   <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114981508-1"></script>
-	<script>
+	
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114981508-1"></script>
+  <script>
   		window.dataLayer = window.dataLayer || [];
   		function gtag(){dataLayer.push(arguments);}
   		gtag('js', new Date());
 
   		gtag('config', 'UA-114981508-1');
-	</script>
+  </script>
 
     <meta charset="UTF-8">
     <title>title</title>
@@ -20,13 +21,17 @@
 
   </head>
   <body>
+
   
     <center><h>KITCHEN GEAR</h></center>
 
     <!-- 1. Define some markup -->
-    <div id="btn" data-clipboard-text="1">
-        <span>Copy</span>
-    </div>
+    <textarea id="bar">Mussum ipsum cacilds...</textarea>
+
+<!-- Trigger -->
+<button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar">
+    Cut to clipboard
+</button>
 
     <!-- 2. Include library -->
     <script src="../dist/clipboard.min.js"></script>
@@ -43,5 +48,7 @@
     });
     </script>
   
+
+
   </body>
 </html>
