@@ -10,21 +10,26 @@
 
   		gtag('config', 'UA-114981508-1');
 	</script>
-
+<script src="clipboard.js-master/dist/clipboard.min.js"></script>
     <meta charset="UTF-8">
     <title>title</title>
 
 	<style media="screen" type="text/css">
-  @font-face {
-  font-family: "Decima"
-  src: url("Decima.otf");
-  }
+ new ClipboardJS('.btn');
 
 </style>
   </head>
   <body>
   
       <center><h>KITCHEN GEAR</h></center>
+
+<!-- Target -->
+<textarea id="bar">Mussum ipsum cacilds...</textarea>
+
+<!-- Trigger -->
+<button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar">
+    Cut to clipboard
+</button>
   
   </body>
 </html>
