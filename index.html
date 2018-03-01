@@ -25,26 +25,22 @@
   
     <center><h>KITCHEN GEAR</h></center>
 
-    <center>
+    
     <!-- 1. Define some markup -->
-    <textarea id="bar">Mussum ipsum cacilds...</textarea>
-
-    <!-- Trigger -->
-    <button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar">
-        Cut to clipboard
-    </button>
-    </center>
+    <div>hello</div>
+    <button class="btn" data-clipboard-action="copy" data-clipboard-target="div">Copy</button>
     
     <!-- 2. Include library -->
-    <script src="clipboard.js-master/dist/clipboard.min.js"></script>
+    <script src="../dist/clipboard.min.js"></script>
 
-    <!-- 3. Instantiate clipboard by passing a HTML element -->
+    <!-- 3. Instantiate clipboard -->
     <script>
-    var btn = document.getElementById('btn');
-    var clipboard = new ClipboardJS(btn);
+    var clipboard = new ClipboardJS('.btn');
+
     clipboard.on('success', function(e) {
         console.log(e);
     });
+
     clipboard.on('error', function(e) {
         console.log(e);
     });
