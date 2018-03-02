@@ -140,24 +140,6 @@ input {
     <!-- 1. Define some markup -->
    
 	    <button class="btn" data-clipboard-action="copy" data-clipboard-target="#bar">Copy Shopping List</button>
-
-    <!-- 2. Include library -->
-    <script src="../dist/clipboard.min.js"></script>
-
-    <!-- 3. Instantiate clipboard -->
-    <script>
-    var clipboard = new ClipboardJS('.btn');
-    clipboard.on('success', function(e) {
-        console.log(e);
-    });
-    clipboard.on('error', function(e) {
-        console.log(e);
-    });
-	    
-		    <br>
-	    <br>
-     <ul id="bar">
-     
      <h1>PANTRY</h1>
      <li>Canned tomatoes</li>
      <li>Canned coconut milk</li>
@@ -218,6 +200,24 @@ input {
 
     
     </center>    
+    <!-- 2. Include library -->
+    <script src="../dist/clipboard.min.js"></script>
+
+    <!-- 3. Instantiate clipboard -->
+    <script>
+    var clipboard = new ClipboardJS('.btn');
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+	    
+		    <br>
+	    <br>
+     <ul id="bar">
+     
+
 
 
 // Click on a close button to hide the current list item
