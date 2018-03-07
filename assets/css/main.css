@@ -2852,11 +2852,10 @@
 
 /* Header */
 
- .mc-modal {
- z-index: 1900 !important;
-  }
+
 	#header {
 		padding: 8em 0 0.1em 0 ;
+         z-index: 1000 !important;
 	}
 
 		#header .logo {
@@ -2890,7 +2889,7 @@
 			position: fixed;
 			right: 2em;
 			top: 2em;
-			z-index: 10000;
+			z-index: 999;
 		}
 
 			#header nav ul {
