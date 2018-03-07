@@ -2,16 +2,6 @@
 
 <html>
 	<head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114981508-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-114981508-1');
-        </script>
-        
 		<title>Dry Ingredients List</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -152,12 +142,12 @@ input {
 	 <!--<button class="btn" data-clipboard-action="copy" data-clipboard-target="#bar">Copy Shopping List</button>-->
      <ul id="bar">
      <h1>PANTRY</h1>
-     <li>Canned Tomatoes</li>
-     <li>Canned Coconut Milk</li>
-     <li>Chicken/Vegetable Broth</li>
-     <li>All-Purpose Flour</li>
-     <li>Tomato Paste</li>
-     <li>Pasta Sauce</li>
+     <li>Canned tomatoes</li>
+     <li>Canned coconut milk</li>
+     <li>Chicken/Vegetable broth</li>
+     <li>All-purpose flour</li>
+     <li>Tomatoe Paste</li>
+     <li>Pasta sauce</li>
      <li>Pasta</li>
      <li>Rice</li>
      <li>Quinoa</li>
@@ -166,7 +156,9 @@ input {
      <li>Black Beans</li>
      <li>Pinto Beans</li>
      <li>Chickpeas</li>
-     <li>Olive Oil</li>
+     <li>Olive oil</li>
+     <li>Avacado oil</li>
+     <li>Coconut oil</li>
      <br>
      
      <h1>DRY SEASONINGS</h1>
@@ -186,27 +178,23 @@ input {
      <li>Garlic Powder</li>
      <li>Chili Powder/Chili flakes</li>
      <li>Curry Powder</li>
-     <li>Cinnamon</li>
+     <li>Garam Masala</li>
      <br>
      
-     <h1>CONDIMENTS</h1>
+     <h1>CODIMENTS</h1>
      <li>Apple Cider Vinegar</li>
      <li>Balsamic Vinegar</li>
      <li>Soy Sauce</li>
      <li>Mustard</li>
      <li>Honey</li>
      <li>Mayo</li>
-     <li>Worcestershire Sauce</li>
-     <li>Ketchup</li>
      
      <br>
      <h1>BAKING</h1>
      <li>Sugar</li>
      <li>Brown Sugar</li>
-     <li>Baking Soda</li>
-     <li>Baking Powder</li>
-     <li>Vanilla Extract</li>
-     <li>Active Dry Yeast</li>
+     <li>Baking soda</li>
+     <li>Baking powder</li>
  </ul>
 
   
@@ -228,16 +216,7 @@ input {
 	    
 		 
      
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
+
 
 
 // Click on a close button to hide the current list item
@@ -288,6 +267,37 @@ function newElement() {
     </script>
 					
 
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="field half first">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="special" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+						</div>
+					</footer>
 
 			</div>
 
