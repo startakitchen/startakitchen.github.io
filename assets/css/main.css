@@ -2852,6 +2852,9 @@
 
 /* Header */
 
+ .mc-modal {
+ z-index: 1900 !important;
+  }
 	#header {
 		padding: 8em 0 0.1em 0 ;
 	}
@@ -3027,7 +3030,7 @@
 			-webkit-overflow-scrolling: touch;
 			position: absolute;
 			top: 0;
-			right: 0;
+			left: 0;
 			width: 100%;
 			height: 100%;
 			padding: 2.75em;
